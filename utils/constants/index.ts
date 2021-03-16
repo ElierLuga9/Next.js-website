@@ -1,0 +1,30 @@
+export const TOTAL_CATEGORIES = [
+  'MOVEMENT',
+  'MINDFULNESS',
+  'HEALING',
+  'MORE',
+]
+
+export const CATEGORY_COLORS = {
+  'MOVEMENT': ['#87362A', '#ffffff'],
+  'MINDFULNESS': ['#ADC6AC', '#ffffff'],
+  'HEALING': ['#A78140', '#000000'],
+  'MORE': ['#C9CDCD', '#000000'],
+}
+
+export const SUB_CATEGORY_COLORS = {
+  'STRETCH': ['#C4C4C4', '#000000'],
+  'YOGA': ['#C4C4C4', '#000000'],
+  'TAI CHI/QIGONG': ['#C4C4C4', '#000000'],
+  'RECOVERY': ['#C4C4C4', '#000000'],
+  'MASSAGE': ['#C4C4C4', '#000000'],
+  'MEDITATION': ['#C4C4C4', '#000000'],
+  'BREATHWORK': ['#C4C4C4', '#000000'],
+  'SOUNDBATH': ['#C4C4C4', '#000000'],
+  'FOREST BATHING': ['#C4C4C4', '#000000'],
+  'ENERGY HEALING': ['#C4C4C4', '#000000'],
+  'THERAPY': ['#C4C4C4', '#000000'],
+  'CRYSTAL HEALING': ['#C4C4C4', '#000000'],
+  'INTENTION SETTING': ['#C4C4C4', '#000000'],
+  'NONE': ['#C5C5C5', '#C5C5C5'],
+}

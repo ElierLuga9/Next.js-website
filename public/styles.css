@@ -1,0 +1,777 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  min-height: 100vh;
+  font-family: Maison Neue Extended;
+  background-color: #e5e5e5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-end {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.font-sm {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.font-md {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.font-bg {
+  font-size: 36px;
+  line-height: 48px;
+}
+
+@font-face {
+  font-family: "Plantin MT Pro";
+  src: url(./fonts/PlantinMTProRg.woff);
+}
+
+@font-face {
+  font-family: "Maison Neue Extended";
+  src: url(./fonts/maison.woff);
+  src: url(./fonts/maison.woff2);
+}
+
+.font-platin {
+  font-family: "Plantin MT Pro";
+}
+
+.font-maison {
+  font-family: "Maison Neue Extended";
+}
+
+.full-height {
+  min-height: 100vh;
+}
+/* header */
+
+.header-logo {
+  max-width: 16vw;
+}
+
+.MuiInputBase-root {
+  width: 18vw;
+  font-family: "Maison Neue Extended" !important;
+}
+.header,
+.header-about {
+  background-color: #988061;
+  color: white;
+  position: relative;
+}
+
+.header {
+  padding: 20px;
+}
+
+.header-desc-font {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.about-navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 18px;
+}
+
+.toOuter {
+  min-height: 32px;
+}
+
+.linktoouter {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.toOuterArrow {
+  vertical-align: middle;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+.mobile-navbar {
+  display: none;
+  position: relative;
+}
+
+.mobile-navbar-menu {
+  position: absolute;
+  display: block;
+}
+
+.mobile-logo-img {
+  margin: auto;
+  display: block;
+}
+
+.mobile-header-nabvar {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: inherit;
+  padding: 45px 27px 13px;
+}
+
+.mobile-header-box {
+  height: 120px;
+  text-align: center;
+}
+
+.mobile-logo {
+  display: none;
+}
+
+.about {
+  margin: auto;
+  margin-top: 71px;
+  max-width: 1249px;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.arrow-to-left {
+  display: none;
+}
+
+.header-logo {
+  margin-top: 0px;
+}
+
+.header-description {
+  margin-top: 32px;
+  max-width: 655px;
+  min-height: 120px;
+  text-align: center;
+}
+
+.email-input {
+  margin-top: 43px;
+  padding: 0px 4px;
+  background-color: inherit;
+  width: 400px;
+  border: 1px solid #ffffff;
+  border-radius: 80px;
+  font-size: 16px;
+}
+
+.email-box {
+  margin-left: 30px;
+  background-color: inherit;
+  font-size: 16px;
+  color: #ffffff;
+  flex: 1;
+}
+
+.divider {
+  margin: 0px;
+  background-color: #ffffff !important;
+  height: 30px !important;
+}
+
+.email-icobtn {
+  padding: 0px !important;
+}
+
+.local-message {
+  word-break: break-all;
+  max-width: 1200px;
+  text-align: center;
+}
+
+.bottom-desc {
+  margin-top: 48px;
+  margin-bottom: 30px;
+}
+
+/* Events list */
+
+.filter-btn-group {
+  text-align: center;
+  line-height: 40px;
+  margin-top: 60px;
+  font-size: 16px;
+}
+
+.filter-btn {
+  width: 180px;
+  height: 40px;
+  margin: 0px 22px;
+  border-radius: 80px;
+}
+
+.submit-class-btn {
+  width: 180px;
+  height: 40px;
+  margin: 0px 22px;
+  border-radius: 80px;
+  cursor: pointer;
+  transition: background-color 0.1s;
+  z-index: 1000;
+}
+
+.submit-class-btn:hover {
+  background-color: #7b3c30;
+}
+
+.submit-class-btn {
+  background-color: #adc6ac;
+  text-align: center;
+  color: #000000;
+  line-height: 40px;
+  margin: 40px auto 100px;
+}
+
+.submit-group {
+  width: 500px;
+  margin: auto;
+  margin-top: 70px;
+}
+
+.submit-field {
+  padding: 20px;
+}
+
+.submit-field label {
+  font-size: 18px;
+}
+
+.submit-header-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 18px;
+  margin-left: 106px;
+}
+
+.filter-btn1 {
+  background-color: #adc6ac;
+}
+
+.filter-btn2 {
+  background-color: #c4c4c4;
+  color: #ffffff;
+}
+
+.sub-filter-btn-group {
+  margin: 56px 0px 60px;
+  font-size: 16px;
+}
+
+.sub-filter-btn {
+  margin: 0px 29px;
+  opacity: 0.2;
+}
+
+.sub-filter-btn:hover {
+  opacity: 0.5;
+}
+
+.underline {
+  opacity: 1;
+}
+
+/* event */
+
+.event-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 60px 100px 10px 0px;
+  padding-bottom: 60px;
+}
+
+.event-date {
+  font-size: 20px;
+  line-height: 29px;
+}
+
+.event-name {
+  font-size: 22px;
+  line-height: 24px;
+}
+
+.entity-name {
+  font-size: 16px;
+  line-height: 24px;
+  padding-top: 5px;
+}
+
+.event-description {
+  font-size: 16px;
+  line-height: 22px;
+  padding-top: 10px;
+  width: 525px;
+}
+
+/* image view */
+
+.img-view {
+  width: 450px;
+  height: 250px;
+  margin: 0px 20px;
+  position: relative;
+}
+
+/* image size */
+
+.image-size {
+  width: 450px;
+  height: 250px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+/* remind button */
+
+.remind-btn {
+  position: absolute;
+  bottom: -25px;
+  left: 130px;
+  width: 180px;
+  height: 40px;
+  border-radius: 80px;
+  text-align: center;
+  line-height: 40px;
+  color: white;
+  user-select: none;
+  transition: background-color 0.1s;
+  z-index: 1000;
+}
+
+.remind-btn:hover {
+  background-color: #adc6ac;
+}
+
+.remind-btn-color {
+  background-color: #988061;
+}
+
+.clk-remind-btn-color {
+  background-color: #adc6ac;
+}
+
+.reminder-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(152, 128, 97, 0.8),
+    rgba(152, 128, 97, 0.8)
+  );
+  padding: 40px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.open-reminder {
+  opacity: 1;
+}
+
+.reminder-option {
+  margin: 15px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* image description */
+
+.img-desc {
+  max-width: 432px;
+  margin: 0px 20px;
+}
+
+.event-btn-group {
+  margin-top: 15px;
+  font-size: 12px;
+}
+
+.event-btn {
+  border-radius: 80px;
+  font-family: Maison Neue Extended;
+  text-align: center;
+  line-height: 36px;
+  color: #ffffff;
+}
+
+.event-btn-1 {
+  min-width: 120px;
+  height: 36px;
+}
+
+.event-btn-2 {
+  min-width: 120px;
+  height: 36px;
+  margin-left: 6px;
+}
+
+.learn-more-link {
+  text-decoration: underline;
+  color: #000000;
+  font-size: 18px;
+  line-height: 20px;
+  margin-top: 5px;
+  margin-left: 0px;
+}
+
+/* footer */
+
+.footer {
+  background-color: #ffffff;
+  width: 100%;
+  min-height: 75px;
+  font-size: 14px;
+}
+
+.footer-link {
+  margin: 0px 60px;
+  color: #000000;
+  text-decoration: none;
+}
+
+/* login modal */
+
+.login-modal-content {
+  text-align: center;
+  max-width: 511px;
+  font-weight: 500;
+}
+
+.login-modal-title {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.login-modal-content > p {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.login-modal-btn {
+  background-color: #988061;
+  width: 150px;
+  height: 30px;
+  border-radius: 80px;
+  border: 1px solid #988061;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  outline: none;
+  text-align: center;
+  line-height: 30px;
+}
+
+/* 13 inch laptops */
+
+@media only screen and (max-width: 1440px) {
+  .header-desc-font {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+/* mobile responsive */
+
+@media only screen and (max-width: 767px) {
+  .font-sm {
+    font-size: 9px;
+    line-height: 12px;
+  }
+
+  .font-md {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .font-bg {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .header {
+    padding: 35px 27px 13px;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .mobile-navbar {
+    display: block;
+  }
+
+  .mobile-logo {
+    display: block;
+  }
+
+  .mobile-header-nabvar {
+    display: block;
+  }
+
+  .header-description {
+    margin-top: 11px;
+    max-width: 270px;
+    min-height: 72px;
+    text-align: center;
+  }
+
+  .header-desc-font {
+    font-size: 9px;
+    line-height: 12px;
+  }
+
+  .email-input {
+    margin-top: 10px;
+    padding: 0px 2px;
+    background-color: inherit;
+    width: 176px;
+    height: 20px;
+    border: 1px solid #ffffff;
+    border-radius: 80px;
+  }
+
+  .email-box {
+    margin-left: 10px;
+    font-size: 8px !important;
+    background-color: inherit;
+    color: #ffffff;
+    flex: 1;
+  }
+
+  .divider {
+    height: 20px !important;
+  }
+
+  .bottom-desc {
+    margin-top: 13px;
+  }
+
+  .submit-group {
+    width: 300px;
+  }
+
+  .submit-class-btn {
+    width: 125px;
+    height: 25px;
+    border-radius: 80px;
+    line-height: 25px;
+    font-size: 12px;
+  }
+
+  .MuiInput-underline:before {
+    border-bottom: 1px solid#ffffff !important;
+    /* color: #ffffff; */
+  }
+
+  .MuiInput-underline:after {
+    border-bottom-color: 1px solid #ffffff !important;
+  }
+
+  .filter-btn {
+    width: 125px;
+    height: 25px;
+    margin: 0px 22px;
+    border-radius: 80px;
+  }
+
+  .filter-btn-group {
+    line-height: 25px;
+    margin-top: 13px;
+  }
+
+  .sub-filter-btn-group {
+    margin: 26px auto 15px;
+  }
+
+  .sub-filter-btn {
+    font-size: 12px;
+    margin: 0px 13px;
+  }
+
+  .event-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px auto 30px;
+  }
+
+  .img-desc {
+    width: 288px;
+    margin: 30px auto;
+  }
+
+  .image-size {
+    width: 300px;
+    height: 167px;
+  }
+
+  .img-view {
+    width: 300px;
+    height: 167px;
+    margin: 0px auto;
+  }
+
+  .remind-btn {
+    bottom: -15px;
+    left: 75px;
+    width: 150px;
+    height: 30px;
+    border-radius: 80px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    user-select: none;
+    z-index: 1000;
+  }
+
+  .reminder-box {
+    padding: 20px;
+  }
+
+  .event-date {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .event-name {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .event-btn {
+    line-height: 25px;
+    color: #ffffff;
+  }
+
+  .entity-name {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .event-description {
+    width: 300px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .event-btn-1 {
+    min-width: 100px;
+    height: 25px;
+  }
+
+  .event-btn-2 {
+    min-width: 100px;
+    height: 25px;
+    margin-left: 16px;
+  }
+
+  .mobile-hide {
+    display: none;
+  }
+
+  .footer-link {
+    margin: 0px 16px;
+  }
+
+  .footer {
+    min-height: 20px;
+  }
+
+  .about-navbar {
+    display: none;
+  }
+
+  .about {
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 9px;
+    line-height: 12px;
+  }
+
+  .header-about {
+    padding: 25px;
+  }
+
+  .arrow-to-left {
+    display: inline-block;
+  }
+
+  .login-modal-title {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .login-modal-content > p {
+    font-size: 9px;
+    line-height: 12px;
+  }
+
+  .login-modal-btn {
+    width: 84px;
+    height: 17px;
+    font-size: 9px;
+    line-height: 17px;
+  }
+}
+/* end of stylesheet */
